@@ -7,5 +7,20 @@ This is a Node CLI application able to take numbers and operators for addition, 
 ## Tradeoffs
 If I had more time I would have implemented testing using Jest or Mocha. And possibly some sort of caching or database to quickly recall calculations, especially for larger calculations this would be useful. 
 
+
+## Installation
+sudo npm install -g rpn-abacus
+
 ## Usage
+Run command `rpnc` in the terminal to begin a calculation. Enter a mix of numbers or operations that work within the RPN system. 
+
+Hit `enter` to evaluate. 
+Type `clear` to begin a new calculation
+Type `q` to quit the calculator
+
+operators:
+    +:adds last two stack elements
+    -:subtracts element 1 from element 2
+    x:multiplies last two stack elements (* is ok but need escape in bash)
+    /:divides element 2 by element 1
 
