@@ -1,6 +1,6 @@
 {
   "name": "rpn-abacus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reverse Polish Notation calculator command line interface",
   "main": "y",
   "scripts": {
