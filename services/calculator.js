@@ -1,4 +1,5 @@
 const chalk = require('chalk');
+const clear = require('../commands/clear');
 
 
 function handleCalculation(calculation){
@@ -21,13 +22,15 @@ function handleCalculation(calculation){
         }
       }
 
+      if(!stack[stack.length-1]){
+        console.log(chalk.red.bold('Something went wrong please try your calculation again.'));
+        return clear();
+      }
+
       if(stack.length > 1){
         return console.log(chalk.green.bold(stack[stack.length -1]));  
       };
-      if(stack[0] === NaN){
-        console.log(chalk.red.bold('Something went wrong please try your calculation again.'));
 
-      }
       console.log(chalk.green.bold(stack[0]));
 }
 

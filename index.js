@@ -22,7 +22,8 @@ rl.on('line', function (input) {
 
     //Determine if characters are all valid
     const isValid = verifyInput(input);
-    //Run through calculator
+   
+    //Run through calculator if valid
     isValid && calculator(input);
 
     //set new line
